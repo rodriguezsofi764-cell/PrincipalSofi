@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Comida</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffd6e0 0%, #fbb1d1 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 450px;
+      border: 2px solid #f78fb3;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #d63384;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #444;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #f8a5c2;
+      border-radius: 10px;
+      font-size: 14px;
+      background: #fff0f6;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #d63384;
+      background: #ffe6f0;
+    }
+    textarea {
+      resize: none;
+    }
+    button {
+      background: #ff85a2;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background: #e75480;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🍰 Encuesta de Comida 🍓</h2>
+    <form action="https://formspree.io/f/mldlyppq" method="POST">
+
+      <label for="name">Tu nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+      <label for="food">¿Cuál es tu comida favorita?</label>
+      <input type="text" id="food" name="food" placeholder="Ejemplo: Tacos, sushi, pizza..." required>
+
+      <label for="cook">¿Qué te gusta cocinar?</label>
+      <input type="text" id="cook" name="cook" placeholder="Ejemplo: pasta, postres, ensaladas..." required>
+
+      <label for="know">¿Sabes cocinar?</label>
+      <select id="know" name="know" required>
+        <option value="">Selecciona una opción</option>
+        <option value="Sí">Sí</option>
+        <option value="Un poco">Un poco</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="often">¿Con qué frecuencia cocinas?</label>
+      <select id="often" name="often">
+        <option value="">Selecciona una opción</option>
+        <option value="Todos los días">Todos los días</option>
+        <option value="Varias veces a la semana">Varias veces a la semana</option>
+        <option value="Solo en ocasiones especiales">Solo en ocasiones especiales</option>
+        <option value="Casi nunca">Casi nunca</option>
+      </select>
+
+      <label for="dish">¿Cuál es el platillo que mejor te sale?</label>
+      <input type="text" id="dish" name="dish" placeholder="Ejemplo: enchiladas, brownies...">
+
+      <label for="dream">¿Qué platillo te gustaría aprender a cocinar?</label>
+      <input type="text" id="dream" name="dream" placeholder="Ejemplo: ramen, paella, croissants...">
+
+      <label for="message">Comentarios adicionales:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Comparte algo más..."></textarea>
+
+      <button type="submit">💌 Enviar Respuestas</button>
+<!-- Botón para volver al inicio -->
+<div style="text-align: center; margin-top: 20px;">
+    <a href="index.html" 
+       style="background-color: #d63384; 
+              color: white; 
+              padding: 12px 25px; 
+              border-radius: 8px; 
+              text-decoration: none; 
+              font-weight: bold; 
+              transition: background 0.3s;">
+        ⬅ Volver al Inicio
+    </a>
+</div>
+
+    </form>
+  </div>
+</body>
+</html>
