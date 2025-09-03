@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recetas de Sofi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffe4ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #d63384;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu > li {
+            margin-left: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #b02168;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h2 {
+            color: #d63384;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #888;
+            font-size: 1.2em;
+        }
+
+        .receta {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #f4c2c2;
+            padding-bottom: 30px;
+        }
+
+        .receta h3 {
+            color: #c2185b;
+            font-size: 1.6em;
+        }
+
+        .receta p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .receta a {
+            color: #d63384;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .receta a:hover {
+            text-decoration: underline;
+        }
+
+        .receta img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Recetas de Sofi</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mas-recetas.html">Más Recetas</a></li>
+            <li><a href="sobre-sofi.html">Sobre Sofi</a></li>
+            <li><a href="formulario.html">Formulario</a></li> <!-- 🔥 Nueva opción -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h2>🍓 Recetas de Sofi</h2>
+            <p>Recetas dulces y saladas para compartir con amor</p>
+        </header>
+
+        <section class="receta">
+            <h3>🍰 Pastel de Fresas Esponjoso</h3>
+            <img src="Pastel fresa.jfif" alt="Pastel de fresas">
+            <p>Una receta fácil y deliciosa para un pastel suave, con fresas frescas y crema batida. Ideal para cumpleaños o tardes con amigas.</p>
+            <p><a href="#">Ver receta completa</a></p>
+        </section>
+
+        <section class="receta">
+            <h3>🥐 Croissants Caseros</h3>
+            <img src="Croissant.webp" alt="Croissants caseros">
+            <p>Aprende a hacer croissants hojaldrados desde cero. Una receta perfecta para los fines de semana, con ese toque mantequilloso que nos encanta.</p>
+            <p><a href="#">Ver receta completa</a></p>
+        </section>
+
+        <section class="receta">
+            <h3>🍲 Sopa de Calabaza Cremosa</h3>
+            <img src="Sopa.jfif" alt="Sopa de calabaza">
+            <p>Esta sopa cremosa de calabaza es ideal para días fríos. Es saludable, reconfortante y muy fácil de preparar.</p>
+            <p><a href="#">Ver receta completa</a></p>
+        </section>
+
+<!-- Botón de descarga -->
+        <div style="text-align: center;">
+            <a href="menu1.pdf" download="menu1.pdf" class="download-btn">📥 Descargar menú</a>
+        </div>
+<!-- Botón para volver al inicio -->
+<div style="text-align: center; margin-top: 20px;">
+    <a href="formulario.html" 
+       style="background-color: #d63384; 
+              color: white; 
+              padding: 12px 25px; 
+              border-radius: 8px; 
+              text-decoration: none; 
+              font-weight: bold; 
+              transition: background 0.3s;">
+        ⬅ Volver al Inicio
+    </a>
+</div>
+
+        <footer>
+            Hecho con 💖 por Sofi · Sígueme en Instagram @recetasdesofi
+        </footer>
+    </div>
+
+</body>
+</html>
+
+        
